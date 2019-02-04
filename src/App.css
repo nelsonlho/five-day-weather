@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.inputBox {
+  padding: 8px;
+  height: 20px;
+  font-size: 16px;
+}
+
+.input-red-border{
+  border: 1px solid red;
+}
+
+.button {
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; 
+  cursor: pointer;
+  padding: 11px 32px;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+.submit {
+  font-size: 16px;
+}
+
+.back {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-components {
+  margin-top: 28px;
+}
+
+.forecast-date {
+  padding: 8px 0;
+  margin: 16px 0;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.forecast-date:hover {
+  background-color: #F9ECEC;
+}
+
+.detail-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-desc {
+  text-transform: capitalize;
+  margin: 24px 16px;
+  padding: 32px;
+  border: 1px solid black;
+  max-height: 140px;
+  flex-basis: auto;
+}
+
+.weather-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.error {
+  font-style: italic;
+}
