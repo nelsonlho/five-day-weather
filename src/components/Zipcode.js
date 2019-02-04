@@ -3,7 +3,7 @@ import React from "react";
 class Zipcode extends React.Component {
   state = {
     zip: this.props.zip,
-    isZipValid: true
+    isZipValid: true,
   };
 
   /**
@@ -41,7 +41,11 @@ class Zipcode extends React.Component {
               maxlength="5"
             />
             <button disabled={!isZipValid}>
-              <div className="button submit">Get Forecasts</div>
+              <div className={
+                isZipValid && zip
+                  ? ["button", "submit"].join(" ")
+                  : ["button", "disabled"].join(" ")
+              }>Get Forecasts</div>
             </button>
           </div>
         </form>
